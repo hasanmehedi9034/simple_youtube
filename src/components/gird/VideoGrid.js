@@ -18,7 +18,9 @@ export default function VideoGrid() {
   if (!isError && loading) content = <div>Loading...</div>;
   if (isError && !loading) content = <div>{error}</div>;
   if (!isError && videos)
-    content = videos.map((video) => <VideoGridItem video={video} />);
+    content = videos.map((video) => (
+      <VideoGridItem key={videos.id} video={video} />
+    ));
 
   return (
     // <!-- Video Grid -->
