@@ -1,8 +1,9 @@
 import React from "react";
-import "./App.css";
+import Video from "./pages/Video";
 
 function App() {
-  return <></>;
+  // return <Home />;
+  return <Video />;
 }
 
 export default App;
