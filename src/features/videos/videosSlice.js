@@ -31,6 +31,7 @@ const videosSlice = createSlice({
         state.loading = false;
         state.isError = true;
         state.error = action.error?.message;
+        state.videos = [];
       });
   },
 });
